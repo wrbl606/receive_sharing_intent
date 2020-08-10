@@ -1,9 +1,26 @@
+## 1.4.0
+
+* Added support for sharing any type of file
+
+# Breaking changes
+
+* In your project `ios/Runner/Info.plist` please change 'SharePhotos' to 'ShareMedia' as follows
+```xml
+    <key>CFBundleURLSchemes</key>
+    <array>
+    	<string>ShareMedia</string>
+```
+
+## 1.3.3
+
+* Fixed the >= 4.2 Swift compiler parsing errors
+
 ## 1.3.2
 
 * Fix Some photos and videos have wrong extension names
 * Fix sharing dialog doesn't close properly
 
-Note. Both fixes require you to update your Sharing Extension Class (please check check that in the example project)
+Note. Both fixes require you to update your Sharing Extension Class (please check that in the example project)
 
 ## 1.3.1+1
 

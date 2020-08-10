@@ -6,7 +6,6 @@ import 'package:flutter/services.dart';
 class ReceiveSharingIntent {
   static const MethodChannel _mChannel =
       const MethodChannel('receive_sharing_intent/messages');
-
   static const EventChannel _eChannelMedia =
       const EventChannel("receive_sharing_intent/events-media");
   static const EventChannel _eChannelLink =
@@ -165,4 +164,4 @@ class SharedMediaFile {
         type = SharedMediaType.values[json['type']];
 }
 
-enum SharedMediaType { IMAGE, VIDEO }
+enum SharedMediaType { IMAGE, VIDEO, FILE }
