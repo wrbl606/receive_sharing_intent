@@ -75,7 +75,7 @@ public class SwiftReceiveSharingIntentPlugin: NSObject, FlutterPlugin, FlutterSt
     
     private func handleUrl(url: URL?, setInitialData: Bool) -> Bool {
         if let url = url {
-            let appDomain = "com.resglobalgroup.nokview"
+            let appDomain = "com.nokview.app"
             let userDefaults = UserDefaults(suiteName: "group.\(appDomain)")
             if url.fragment == "media" {
                 if let key = url.host?.components(separatedBy: "=").last,
